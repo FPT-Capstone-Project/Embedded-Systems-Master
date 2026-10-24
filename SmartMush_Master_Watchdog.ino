@@ -25,36 +25,6 @@
 #include <PubSubClient.h>
 
 // =====================================================
-// SETTINGS
-// =====================================================
-
-static const char *MQTT_HOST =
-    "o2cae609.ala.asia-southeast1.emqxsl.com";
-
-static const uint16_t MQTT_PORT = 8883;
-
-static const char *MQTT_USER = "admin";
-static const char *MQTT_PASSWORD = "12345678";
-
-static const char *MASTER_ID = "master01";
-
-// Empty password = open configuration Wi-Fi
-static const char *AP_PASSWORD = "";
-
-// STM32 node addresses
-static const uint8_t FIRST_NODE_ID = 1;
-static const uint8_t LAST_NODE_ID = 3;
-// GPIO HIGH = SSR ON, GPIO LOW = SSR OFF
-static const bool SSR_ACTIVE_LOW = false;
-
-// TEST ONLY: TLS encryption without server certificate verification
-static const bool MQTT_SKIP_CERT_VERIFY_FOR_TEST = true;
-
-// Optional CA for later production use
-static const char MQTT_CA_CERT[] = R"PEM(
-)PEM";
-
-// =====================================================
 // HARDWARE CONFIG
 // =====================================================
 
